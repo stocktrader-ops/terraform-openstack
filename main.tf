@@ -5,6 +5,11 @@ provider "openstack" {
   domain_name = var.domain_name
   auth_url    = var.ostack_url
   insecure    = true
+
+  endpoint_overrides = {
+    compute = var.ostack_endpoint_compute
+    
+  }
 }
 
  

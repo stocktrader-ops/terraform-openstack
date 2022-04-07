@@ -12,6 +12,11 @@ variable "ostack_url" {
   default     = "https://129.40.156.138:5000/v3/"
 }
 
+variable "ostack_endpoint_compute" {
+  description = "override for compute endpoint"
+  default     = "https://129.40.156.138:8774/v2.1/"
+}
+
 
 variable "tenant_name" {
   description = "openstack project name"
