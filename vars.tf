@@ -16,6 +16,14 @@ variable "ostack_endpoint_compute" {
   description = "override for compute endpoint"
   default     = "https://129.40.156.138:8774/v2.1/"
 }
+variable "ostack_endpoint_image" {
+  description = "override for image endpoint"
+  default     = "https://129.40.156.138:9292/v2/"
+}
+variable "ostack_endpoint_network" {
+  description = "override for network endpoint"
+  default     = "https://129.40.156.138:9696/v2.0/"
+}
 
 
 variable "tenant_name" {

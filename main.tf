@@ -8,6 +8,8 @@ provider "openstack" {
 
   endpoint_overrides = {
     compute = var.ostack_endpoint_compute
+    image = var.ostack_endpoint_image
+    network = var.ostack_endpoint_network
     
   }
 }
