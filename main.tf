@@ -12,15 +12,12 @@ provider "openstack" {
   }
 }
 
- 
-
 resource "openstack_compute_instance_v2" "ostack-vm" {
   name      = var.host-name
-  image_id  = var.image_id
-  flavor_id = var.flavor_id
+  image_name  = var.image_name
+  flavor_name = var.flavor_name
 
   network {
-    uuid = var.network-uuid
     name = var.network
   }
 
